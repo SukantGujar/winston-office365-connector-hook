@@ -1,3 +1,6 @@
+node_modules
+.gitignore
+
 test.js
 yarn.lock
-.vscode/
+.vscode
