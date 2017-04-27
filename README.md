@@ -14,7 +14,7 @@ $ npm install --save winston winston-office365-connector-hook
 * Use [winston](https://github.com/winstonjs/winston)
 * Get a Webhook URL by setting up an [Incoming Connector](https://msdn.microsoft.com/en-us/microsoft-teams/connectors) for the Teams channel you wish to send the logs to. 
 
-Note that Office 365 Connector Webhook URL is tied to a given channel, so you don't need to specify a channel name separately.
+> Note that Office 365 Connector Webhook URL is tied to a given channel, so you don't need to specify a channel name separately.
 
 ## Usage
 
