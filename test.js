@@ -1,5 +1,5 @@
 var Office365ConnectorHook = require("./index.js"),
-    winston = require('Winston');
+    winston = require('winston');
 
 var Logger = winston.Logger;
 var Console = winston.transports.Console;
