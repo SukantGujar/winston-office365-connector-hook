@@ -1,0 +1,37 @@
+{
+  "name": "winston-office365-connector-hook",
+  "version": "0.1.0",
+  "description": "A Winston transport hook to send logs over to a Office 365 Connector, e.g. Microsoft Teams channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SukantGujar/winston-office365-connector-hook.git"
+  },
+  "keywords": [
+    "office",
+    "365",
+    "connector",
+    "microsoft",
+    "teams",
+    "winston",
+    "log"
+  ],
+  "author": "Sukant Gujar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SukantGujar/winston-office365-connector-hook/issues"
+  },
+  "homepage": "https://github.com/SukantGujar/winston-office365-connector-hook#readme",
+  "devDependencies": {
+    "winston": "^2.3.1"
+  },
+  "peerDependencies": {
+    "winston": "^2.3.1"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
