@@ -1,0 +1,3 @@
+- [x] Basic logging
+- [ ] Add support for extended [card parameters](https://dev.outlook.com/Connectors/Reference)
+- [ ] Tests

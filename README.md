@@ -75,3 +75,5 @@ var logger = new Logger({
   ]
 });
 ```
+### Roadmap
+See [here](ROADMAP.md)
