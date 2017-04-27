@@ -1,6 +1,6 @@
 node_modules
 .gitignore
-
+.travis.yml
 test.js
 yarn.lock
 .vscode
