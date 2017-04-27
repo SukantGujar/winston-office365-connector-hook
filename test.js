@@ -13,4 +13,4 @@ var logger = new Logger({
     ]
 });
 
-logger.info('I am being logged here'); // will be sent to both console and Slack
+logger.info('I am being logged here'); // will be sent to both console and channel
