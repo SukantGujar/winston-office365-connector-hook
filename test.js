@@ -13,7 +13,7 @@ var logger = new Logger({
     transports: [
         new Console({}),
         new Office365ConnectorHook({
-            hookUrl: process.env.HOOK_URL
+            "hookUrl": hookUrl
         })
     ]
 });
