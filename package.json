@@ -1,6 +1,6 @@
 {
   "name": "winston-office365-connector-hook",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Winston transport hook to send logs over to a Office 365 Connector, e.g. Microsoft Teams channel.",
   "main": "index.js",
   "scripts": {
