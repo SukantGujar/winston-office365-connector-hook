@@ -24,8 +24,8 @@ var logger = new Logger({
 // will be sent to both console and channel
 logger.log('debug', 'Starting tests...');
 logger.info('This is a test log from Winston.');
-logger.info('This text appears in card body.', { title: 'You can send card titles too!' });
-logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in error messages.' });
+logger.info('This text appears in card body.', { title: 'My puny title' });
+logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in messages.' });
 logger.warn('Warning! An error test coming up!');
 try {
     throw new Error("Everything's alright, just testing error logging.");
