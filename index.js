@@ -36,7 +36,7 @@ Office365ConnectorHook.prototype.log = function (level, msg, meta, callback) {
         themeColor = this.webColors[level] || webColors[color],
         title = "";
 
-    console.log(themeColor);
+    // console.debug(themeColor);
 
     var message = '';
 
