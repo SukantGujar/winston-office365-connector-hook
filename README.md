@@ -63,6 +63,10 @@ Optional:
    }
 ```
 > Behind the scenes, the level color is sent as the [`themeColor`](https://dev.outlook.com/Connectors/Reference#color) property of the card.
+<p align="center">
+  <image src='docs/genericlog.png?raw=true' alt='generic log' />
+  <image src='docs/errorexample.png?raw=true' alt='error example' />
+</p>
 
 ### Markdown support in messages
 
@@ -71,7 +75,7 @@ Channel messages support Markdown syntax. Any formatting is sent *as-is* to the 
     logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in messages.' });
 
 <p align="center">
-  <image src='docs/markdownexample.png?raw=true' alt='banner' />
+  <image src='docs/markdownexample.png?raw=true' alt='markdown example' />
 </p>
 
 ### Setting card title
@@ -81,7 +85,7 @@ You can set a [`title`](https://dev.outlook.com/Connectors/Reference#title) for 
     logger.info('This text appears in card body.', { title: 'My puny title' });
 
 <p align="center">
-  <image src='docs/titleexample.png?raw=true' alt='banner' />
+  <image src='docs/titleexample.png?raw=true' alt='title example' />
 </p>
 
 ### Formatter
