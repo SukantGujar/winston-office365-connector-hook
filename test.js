@@ -13,9 +13,23 @@ var logger = new Logger({
     transports: [
         new Console({}),
         new Office365ConnectorHook({
-            "hookUrl": hookUrl
+            "hookUrl": hookUrl,
+            "colors": {
+                "debug": "FFFFFF"
+            }
         })
     ]
 });
 
-logger.info('I am being logged here'); // will be sent to both console and channel
+// will be sent to both console and channel
+logger.log('debug', 'Starting tests...');
+logger.info('This is a test log from Winston.');
+logger.info('This text appears in card body.', { title: 'You can send card titles too!' });
+logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in error messages.' });
+logger.warn('Warning! An error test coming up!');
+try {
+    throw new Error("Everything's alright, just testing error logging.");
+}
+catch (err) {
+    logger.error(err.message, err);
+}
