@@ -1,4 +1,4 @@
-# winston-office365-connector-hook [![Build Status](https://travis-ci.org/SukantGujar/winston-office365-connector-hook.svg?branch=master)](https://travis-ci.org/SukantGujar/winston-office365-connector-hook)
+# winston-office365-connector-hook [![Build Status](https://travis-ci.org/SukantGujar/winston-office365-connector-hook.svg?branch=master)](https://travis-ci.org/SukantGujar/winston-office365-connector-hook) [![npm version](https://badge.fury.io/js/winston-office365-connector-hook.svg)](https://badge.fury.io/js/winston-office365-connector-hook)
 A Winston transport hook to send logs over to a Office 365 Connector, e.g. Microsoft Teams channel.
 
 Inspired by [winston-slack-hook](https://github.com/fahad19/winston-slack-hook) by [fahad19](https://github.com/fahad19).
