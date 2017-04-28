@@ -7,8 +7,7 @@
     "test": "node test.js",
     "version:patch": "npm version patch",
     "push": "git push --tags origin HEAD:master",
-    "deploy:prod": "npm run test && npm run version:patch && npm run push",
-    "prepublish": "npm run deploy:prod"
+    "deploy": "npm run test && npm run version:patch && npm run push"
   },
   "repository": {
     "type": "git",
