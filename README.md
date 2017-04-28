@@ -50,6 +50,27 @@ Optional:
 * `prependLevel`: set to `true` by default, sets `[level]` at the beginning of the message
 * `appendMeta`: set to `true` by default, sets stringified `meta` at the end of the message
 * `formatter(options)`: function for transforming the message before posting to Slack
+* `colors`: use this to set custom colors to log levels. Note that you MUST use hex format, not names.
+  e.g.
+```
+  "colors": {
+     "debug": "4256f4",
+     "error": "f00"
+   }
+```
+> Behind the scenes, the level color is sent as the [`themeColor`](https://dev.outlook.com/Connectors/Reference#color) property of the card.
+
+### Markdown support in messages
+
+Channel messages support Markdown syntax. Any formatting is sent *as-is* to the Channel.
+
+    logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in messages.' });
+
+### Setting card title
+
+You can set a [`title`](https://dev.outlook.com/Connectors/Reference#title) for the card by sending it as a part of the `meta` hash:
+
+    logger.info('This text appears in card body.', { title: 'My puny title' });
 
 ### Formatter
 
