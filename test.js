@@ -1,14 +1,19 @@
 var Office365ConnectorHook = require("./index.js"),
-    winston = require('winston');
+    winston = require('winston'),
+    Logger = winston.Logger,
+    Console = winston.transports.Console,
+    hookUrl = process.env.HOOK_URL;
 
-var Logger = winston.Logger;
-var Console = winston.transports.Console;
+if (!hookUrl) {
+    console.warn("No process.env.HOOK_URL set. Please set it to your Connector Webhook URL before running this test.");
+    process.exit();
+}
 
 var logger = new Logger({
     transports: [
         new Console({}),
         new Office365ConnectorHook({
-            hookUrl: 'https://outlook.office.com/webhook/28b98568-d712-43b0-acab-dc662d48af10@6afcd346-7cb2-46db-897d-c639dbdf0449/IncomingWebhook/292e9954dc38453ab8dca787d4dae2c3/26b2f7b0-a26a-43d3-b4e8-ccd198b6b3ef'
+            hookUrl: process.env.HOOK_URL
         })
     ]
 });
