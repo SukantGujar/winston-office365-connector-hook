@@ -4,7 +4,11 @@
   "description": "A Winston transport hook to send logs over to a Office 365 Connector, e.g. Microsoft Teams channel.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "version:patch": "npm version patch",
+    "push": "git push --tags origin HEAD:master",
+    "deploy": "npm run test && npm run version:patch && npm run push",
+    "prepublish": "npm run deploy"
   },
   "repository": {
     "type": "git",
