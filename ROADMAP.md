@@ -1,3 +1,3 @@
 - [x] Basic logging
-- [ ] Add support for extended [card parameters](https://dev.outlook.com/Connectors/Reference)
+- [x] Add support for extended [card parameters](https://dev.outlook.com/Connectors/Reference) like `title` and `themeColor`
 - [ ] Tests
