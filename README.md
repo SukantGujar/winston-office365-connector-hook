@@ -3,6 +3,10 @@ A Winston transport hook to send logs over to a Office 365 Connector, e.g. Micro
 
 Heavily based on [winston-slack-hook](https://github.com/fahad19/winston-slack-hook) by [fahad19](https://github.com/fahad19).
 
+<p align="center">
+  <image src='docs/banner.png?raw=true' alt='banner' />
+</p>
+
 ## Install
 
 ```
@@ -66,11 +70,19 @@ Channel messages support Markdown syntax. Any formatting is sent *as-is* to the 
 
     logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in messages.' });
 
+<p align="center">
+  <image src='docs/markdownexample.png?raw=true' alt='banner' />
+</p>
+
 ### Setting card title
 
 You can set a [`title`](https://dev.outlook.com/Connectors/Reference#title) for the card by sending it as a part of the `meta` hash:
 
     logger.info('This text appears in card body.', { title: 'My puny title' });
+
+<p align="center">
+  <image src='docs/titleexample.png?raw=true' alt='banner' />
+</p>
 
 ### Formatter
 
