@@ -3,6 +3,8 @@ A Winston transport hook to send logs over to a Office 365 Connector, e.g. Micro
 
 Inspired by [winston-slack-hook](https://github.com/fahad19/winston-slack-hook) by [fahad19](https://github.com/fahad19).
 
+Uses [queue](https://github.com/jessetane/queue) implementation by [jessetane](https://github.com/jessetane) for processing transport tasks.
+
 <p align="center">
   <image src='docs/banner.png?raw=true' alt='banner' />
 </p>
