@@ -1,3 +1,4 @@
 - [x] Basic logging
 - [x] Add support for extended [card parameters](https://dev.outlook.com/Connectors/Reference) like `title` and `themeColor`
+- [x] Process logs in a queue to ensure we don't blow up the connector channel.
 - [ ] Tests
