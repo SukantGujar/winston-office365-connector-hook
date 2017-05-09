@@ -13,6 +13,7 @@ var logger = new Logger({
     transports: [
         new Console({}),
         new Office365ConnectorHook({
+            "level": "debug",
             "hookUrl": hookUrl,
             "colors": {
                 "debug": "FFFFFF"
@@ -21,15 +22,20 @@ var logger = new Logger({
     ]
 });
 
-// will be sent to both console and channel
-logger.log('debug', 'Starting tests...');
-logger.info('This is a test log from Winston.');
-logger.info('This text appears in card body.', { title: 'My puny title' });
-logger.info('# Seriously!?\n > This is cool!', { title: 'You can use Markdown in messages.' });
-logger.warn('Warning! An error test coming up!');
-try {
-    throw new Error("Everything's alright, just testing error logging.");
+function testOnce(val, i) {
+    var iteration = 'Iteration - ' + (i + 1) + " ";
+    logger.log('debug', iteration + 'Starting tests...');
+    logger.info(iteration + 'This is a test log from Winston.');
+    logger.info(iteration + 'This text appears in card body.', { title: 'My puny title' });
+    logger.info(iteration + '# Seriously!?\n > This is cool!', { title: 'You can use Markdown in messages.' });
+    logger.warn(iteration + 'Warning! An error test coming up!');
+    try {
+        throw new Error(iteration + "Everything's alright, just testing error logging.");
+    }
+    catch (err) {
+        logger.error(err.message, err);
+    }
 }
-catch (err) {
-    logger.error(err.message, err);
-}
+
+var iterations = new Array(5).fill(1);
+iterations.forEach(testOnce);
