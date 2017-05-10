@@ -114,5 +114,14 @@ var logger = new Logger({
   ]
 });
 ```
+### Changelog
+
+* 0.1.7
+  Implemented queue based processing of log requests to ensure messages are not dropped during heavy traffic.
+* 0.1.6
+  Fixed error object serialization.
+* 0.1.5
+  Initial release.
+
 ### Roadmap
 See [here](ROADMAP.md)
